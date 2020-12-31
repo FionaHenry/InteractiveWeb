@@ -1,3 +1,5 @@
+//import SpinWheeel from './SpinWheel';
+
 export default function Courses() {
     return (
         <>
