@@ -1,4 +1,4 @@
-import {Route, BrowserRouter as Router} from 'react-router-dom';
+import {Route, BrowserRouter as Router, Switch} from 'react-router-dom';
 import './App.css';
 import SimpleSlider from './Slider';
 import Header from './Header';
@@ -24,12 +24,13 @@ function App() {
       <section>
         <SimpleSlider />
       </section>
-
-      <Route path='/' exact component={Home}/>
-      <Route path='/Courses' component={Courses}/>
-      <Route path='/Apply' component={Apply}/>
-      <Route path='/Contact' component={Contact}/>
-      <Route path='/WhyUCP' component={WhyUCP}/>
+      <Switch>
+        <Route path='/' exact component={Home}/>
+        <Route path='/Courses' component={Courses}/>
+        <Route path='/Apply' component={Apply}/>
+        <Route path='/Contact' component={Contact}/>
+        <Route path='/WhyUCP' component={WhyUCP}/>
+      </Switch>
 
       <section>
         <Footer />
