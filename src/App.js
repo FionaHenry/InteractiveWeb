@@ -1,14 +1,14 @@
 import {Route, BrowserRouter as Router, Switch, Link} from 'react-router-dom';
 import './App.css';
-import SimpleSlider from './Slider';
-import Header from './Header';
-import Footer from './Footer';
-import Home from './Home';
-import Navbar from './Navbar';
-import Apply from './Apply';
-import Contact from './Contact';
-import WhyUCP from './WhyUCP';
-import Courses from './Courses';
+import SimpleSlider from './components/Slider';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import Navbar from './components/Navbar';
+import Apply from './pages/Apply';
+import Contact from './pages/Contact';
+import WhyUCP from './pages/WhyUCP';
+import Courses from './pages/Courses';
 
 function App() {
   return (
