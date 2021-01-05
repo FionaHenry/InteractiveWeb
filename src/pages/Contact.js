@@ -1,4 +1,4 @@
-import  MapContainer  from "./Map";
+import  MapContainer  from "../Map";
 
 export default function Contact() {
     return (  
