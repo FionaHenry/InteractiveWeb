@@ -8,13 +8,13 @@ export default function Footer() {
                 </p>
                 <div class="columns">
                     <div class="column">Useful Links</div>
-                    <a href="url">Why UCP?</a>
-                    <a href="url">Courses</a>
-                    <a href="url">Contact Us</a>
+                    <a href="/WhyUCP">Why UCP?</a>
+                    <a href="/Courses">Courses</a>
+                    <a href="/Contact">Contact Us</a>
                 <div class="column">Follow UCP on Social Media</div>
-                    <a href="url">Facebook</a>
-                    <a href="url">Twitter</a>
-                    <a href="url">LinkedIn</a>
+                    <a href="https://www.facebook.com/ucpeterborough/">Facebook</a>
+                    <a href="https://twitter.com/ucpeterborough">Twitter</a>
+                    <a href="https://www.linkedin.com/school/university-centre-peterborough/">LinkedIn</a>
                 </div>
             </div>
         </footer>
