@@ -1,4 +1,4 @@
-import {Route, BrowserRouter as Router, Switch} from 'react-router-dom';
+import {Route, BrowserRouter as Router, Switch, Link} from 'react-router-dom';
 import './App.css';
 import SimpleSlider from './Slider';
 import Header from './Header';
@@ -24,6 +24,7 @@ function App() {
       <section>
         <SimpleSlider />
       </section>
+      
       <Switch>
         <Route path='/' exact component={Home}/>
         <Route path='/Courses' component={Courses}/>

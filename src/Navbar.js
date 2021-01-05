@@ -1,15 +1,79 @@
-export default function Navbar() {
-    return (
-        <div class="navbar is-primary">
-            <nav class="tabs">
-                <div class="buttons">
-                    <button class="button is-primary is-active">Home</button>
-                    <button class="button is-primary">Why UCP?</button>
-                    <button class="button is-primary">Courses</button>
-                    <button class="button is-primary">Apply</button>
-                    <button class="button is-primary">Contact</button>
-                </div>
-            </nav>
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+
+const Navbar = () => {
+  const [isOpen, setOpen] = useState(false);
+  return ( 
+  	<nav
+      className="navbar is-primary"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div className="container">
+      <div className="navbar-brand">
+          <a
+            role="button"
+            className={`navbar-burger burger ${isOpen && "is-active"}`}
+            aria-label="menu"
+            aria-expanded="false"
+            onClick={() => setOpen(!isOpen)}
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
-    );
-};
+        <div className={`navbar-menu ${isOpen && "is-active"}`}>
+          <div className="navbar-start">
+            <NavLink 
+                className="navbar-item" 
+                activeClassName="is-active" 
+                to= "/">
+              Home
+            </NavLink>
+
+            <NavLink
+              className="navbar-item"
+              activeClassName="is-active"
+              to="/WhyUCP"
+            >
+              Why UCP?
+            </NavLink>
+
+            <NavLink
+              className="navbar-item"
+              activeClassName="is-active"
+              to="/Courses"
+            >
+              Courses
+            </NavLink>
+
+          <NavLink
+              className="navbar-item"
+              activeClassName="is-active"
+              to="/Apply"
+            >
+              Apply
+            </NavLink>
+
+            <NavLink
+              className="navbar-item"
+              activeClassName="is-active"
+              to="/Contact"
+            >
+              Contact
+            </NavLink>
+            
+          </div>
+
+          <div className="navbar-end">
+            <div className="navbar-item">
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+ };
+ 
+ export default Navbar;
