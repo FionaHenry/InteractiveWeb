@@ -17,11 +17,11 @@ export default function Footer() {
                     </div>
                 <div class="column">Follow UCP on Social Media
                 <br></br>
-                    <a href="https://www.facebook.com/ucpeterborough/">Facebook</a>
+                <a href="https://www.facebook.com/ucpeterborough/" target="blank">Facebook</a>
                     <br></br>
-                    <a href="https://twitter.com/ucpeterborough">Twitter</a>
+                    <a href="https://twitter.com/ucpeterborough" target="blank">Twitter</a>
                     <br></br>
-                    <a href="https://www.linkedin.com/school/university-centre-peterborough/">LinkedIn</a>
+                    <a href="https://www.linkedin.com/school/university-centre-peterborough/" target="blank">LinkedIn</a>
                     </div>
                 </div>
             </div>
