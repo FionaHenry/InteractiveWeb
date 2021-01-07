@@ -1,16 +1,18 @@
+import React, { Component } from 'react';
 import { Map, GoogleApiWrapper } from 'google-maps-react';
 
 
 const mapStyles = {
-    width: '100%',
-    height: '100%'
+    width: '90%',
+    height: '50%'
   };
 
-  export default function MapContainer() {
+  export class MapContainer extends Component {
+    render() {
     return (
         <Map
           google={this.props.google}
-          zoom={14}
+          zoom={15}
           style={mapStyles}
           initialCenter={
             {
@@ -19,9 +21,9 @@ const mapStyles = {
             }
           }
         />
-        );
-};
+      );
+    }}
 
-//export default GoogleApiWrapper({
- //   apiKey: 'AIzaSyCHULxIenqUhe1LBCHoxnHbxSOPWv2Wgkw'
- // })(MapContainer);
+    export default GoogleApiWrapper({
+      apiKey: 'AIzaSyCHULxIenqUhe1LBCHoxnHbxSOPWv2Wgkw'
+    })(MapContainer);
