@@ -8,13 +8,11 @@ export default function Home() {
                 <div class="tile is-parent is-vertical">
                     <article class="tile is-child notification">
                     </article>
-                    <article class="tile is-child notification">
-                    </article>
                 </div>
                 <div class="tile is-parent">
-                    <article class="tile is-child notification">
-                    <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/640x480.png" alt=""></img>
+                    <article class="tile is-child notification is-primary">
+                    <figure class="image is-4by2">
+                        <img src="./Virtual.jpg" alt=""></img>
                     </figure>
                     </article>
                 </div>
