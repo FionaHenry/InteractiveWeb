@@ -7,6 +7,11 @@ export default function Home() {
                 <div class="tile">
                 <div class="tile is-parent is-vertical">
                     <article class="tile is-child notification">
+                        <div id="wheelOfFortune">
+                            <canvas id="wheel" width="700" height="700"></canvas>
+                            <div id="spin">SPIN</div>
+                            <script  src="./SpinWheel.js"></script>
+                        </div>
                     </article>
                 </div>
                 <div class="tile is-parent">

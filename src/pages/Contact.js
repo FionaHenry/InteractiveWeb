@@ -6,6 +6,7 @@ export default function Contact() {
         <br></br>
         <div class="tile is-ancestor">
             <div class="tile is-vertical is-6">
+                <br></br>
                 <article class="tile is-child notification is-success">
                     <p class="title">Find our campus here</p>
                     <p>University Centre Peterborough</p>
