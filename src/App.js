@@ -1,4 +1,4 @@
-import {Route, BrowserRouter as Router, Switch, Link} from 'react-router-dom';
+import {Route, BrowserRouter as Router, Switch} from 'react-router-dom';
 import './App.css';
 import SimpleSlider from './components/Slider';
 import Header from './components/Header';
@@ -9,6 +9,9 @@ import Apply from './pages/Apply';
 import Contact from './pages/Contact';
 import WhyUCP from './pages/WhyUCP';
 import Courses from './pages/Courses';
+import Business from './pages/Business';
+import Computing from './pages/Computing';
+import EnglishLit from './pages/EnglishLit';
 
 function App() {
   return (
@@ -31,6 +34,9 @@ function App() {
         <Route path='/Apply' component={Apply}/>
         <Route path='/Contact' component={Contact}/>
         <Route path='/WhyUCP' component={WhyUCP}/>
+        <Route path='/Business' component={Business}/>
+        <Route path='/Computing' component={Computing}/>
+        <Route path='/EnglishLit' component={EnglishLit}/>
       </Switch>
 
       <section>
