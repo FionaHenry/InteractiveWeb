@@ -35,6 +35,15 @@ export default function Courses() {
                     <script src="./SpinWheel.js"></script>
                 </div>
             </div>
+            <div class="tile is-child">
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <p class="title">Not sure which course is right for you?</p>
+                <br></br>
+                <p class="subtitle">Spin our Wheel of UCP to check out what is available</p>
+            </div>
         </div>
         </>
     
